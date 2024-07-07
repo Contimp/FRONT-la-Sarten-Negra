@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 
 // const URI = 'http://localhost:3000/items/'
 
+const URI = "https://pamela.alwaysdata.net/items/";
+
 export default function AddItem() {
   const [plato, setPlato] = useState("");
   const [cantidad, setCantidad] = useState("");

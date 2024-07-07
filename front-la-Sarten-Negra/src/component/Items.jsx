@@ -1,9 +1,10 @@
 import React from "react";
 import menu from "../menu";
+import "./Items.css";
 
 export default function Items() {
   return (
-    <div>
+    <div className="items">
       {menu.map((b) => (
         <div key={b.nombre}>
           <h3>{b.nombre}</h3>

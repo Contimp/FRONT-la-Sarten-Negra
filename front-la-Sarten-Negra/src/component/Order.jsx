@@ -6,6 +6,8 @@ import "./Order.css";
 
 // const URI = 'http://localhost:3000/items/'
 
+const URI = "https://pamela.alwaysdata.net/items/";
+
 export default function Order() {
   const [items, setItems] = useState([]);
   const { email } = useParams();
@@ -41,6 +43,8 @@ export default function Order() {
             <button onClick={() => deleteItem(item.id)}>Delete</button>
           </div>
         ))}
+      <br />
+      <br />
       <Link to={"/"}>Ir a inicio</Link>
     </div>
   );

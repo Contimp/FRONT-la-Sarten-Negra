@@ -1,5 +1,23 @@
-.ordercontainer{
+.ordercontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #e8e9ef;
+  padding: 15rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  transition: 0.3s;
 }

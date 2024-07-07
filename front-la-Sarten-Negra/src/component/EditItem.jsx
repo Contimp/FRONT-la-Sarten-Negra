@@ -5,6 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 
 // const URI = 'http://localhost:3000/items/'
 
+const URI = "https://pamela.alwaysdata.net/items/";
+
 export default function EditItem() {
   const [plato, setPlato] = useState("");
   const [cantidad, setCantidad] = useState("");
@@ -14,10 +16,7 @@ export default function EditItem() {
 
   const updateItem = async (e) => {
     e.preventDefault();
-    await axios.put(URI + id, {
-      plato,
-      cantidad,
-    });
+    await axios.put(URI + id, { plato, cantidad });
     navigate(`/home/${email}`);
   };
 
