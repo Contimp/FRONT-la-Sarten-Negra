@@ -1,27 +1,27 @@
 const menu = [
   {
     nombre: "pizza muzzarrella",
-    precio: 2000,
+    precio: 10000,
   },
   {
     nombre: "raviolli salsa fileto",
-    precio: 2200,
+    precio: 6200,
   },
   {
     nombre: "canelloni salsa bechamel",
-    precio: 2000,
+    precio: 7000,
   },
   {
     nombre: "milanesa con papa fritas",
-    precio: 2400,
+    precio: 5400,
   },
   {
     nombre: "milanesa con ensaladas",
-    precio: 2500,
+    precio: 5500,
   },
   {
     nombre: "pizza especial",
-    precio: 2300,
+    precio: 13000,
   },
 ];
 
