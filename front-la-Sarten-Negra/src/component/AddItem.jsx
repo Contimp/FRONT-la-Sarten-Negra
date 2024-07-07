@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import "./AddItem.css";
 
 // const URI = 'http://localhost:3000/items/'
 
@@ -21,12 +22,14 @@ export default function AddItem() {
   };
 
   return (
-    <div>
+    <div className="additem">
       <form onSubmit={postItem}>
+        <br />
         <div>
-          <label>Plato</label>
+          <label className="plato">Plato</label>
           <input value={plato} onChange={(e) => setPlato(e.target.value)} />
         </div>
+        <br />
         <div>
           <label>Cantidad</label>
           <input
@@ -34,6 +37,7 @@ export default function AddItem() {
             onChange={(e) => setCantidad(e.target.value)}
           />
         </div>
+        <br />
         <button>Add item</button>
       </form>
     </div>

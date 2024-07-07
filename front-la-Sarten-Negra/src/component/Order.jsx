@@ -40,7 +40,9 @@ export default function Order() {
             <p>{item.plato}</p>
             <p>{item.cantidad}</p>
             <Link to={`/edit/${item.id}/${email}`}>Editar</Link>
-            <button onClick={() => deleteItem(item.id)}>Delete</button>
+            <button className="btn" onClick={() => deleteItem(item.id)}>
+              Delete
+            </button>
           </div>
         ))}
       <br />
